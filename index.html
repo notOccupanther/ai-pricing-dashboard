@@ -209,11 +209,21 @@ async function loadData() {
   let data = null;
   let isDemo = false;
 
+  // Try data.json first (static scraper output)
   try {
-    const r = await fetch('http://localhost:8000/api/v1/pricing/current?limit=50', { signal: AbortSignal.timeout(3000) });
+    const r = await fetch('data.json?t=' + Date.now());
     if (r.ok) data = await r.json();
   } catch(e) {}
 
+  // Fallback: try live API
+  if (!data) {
+    try {
+      const r = await fetch('http://localhost:8000/api/v1/pricing/current?limit=50', { signal: AbortSignal.timeout(3000) });
+      if (r.ok) data = await r.json();
+    } catch(e) {}
+  }
+
+  // Last resort: hardcoded demo
   if (!data) {
     data = DEMO_DATA;
     isDemo = true;
@@ -230,14 +240,15 @@ async function loadData() {
 }
 
 function renderStats(d) {
-  const providers = [...new Set(d.models.map(m => m.provider))].length;
-  const cheapest = Math.min(...d.models.map(m => m.input));
-  const avg = (d.models.reduce((s,m) => s+m.input, 0) / d.models.length).toFixed(2);
+  const s = d.stats || {};
+  const providers = s.providers || [...new Set(d.models.map(m => m.provider))].length;
+  const cheapest = s.cheapest_input ?? Math.min(...d.models.map(m => m.input));
+  const avg = s.avg_input ?? (d.models.reduce((a,m) => a+m.input, 0) / d.models.length).toFixed(2);
   document.getElementById('s-providers').textContent = providers;
   document.getElementById('s-models').textContent = d.models.length;
-  document.getElementById('s-cheapest').textContent = '$' + cheapest.toFixed(2);
+  document.getElementById('s-cheapest').textContent = '$' + Number(cheapest).toFixed(3);
   document.getElementById('s-changes').textContent = d.recent_changes?.length || 0;
-  document.getElementById('s-avgcost').textContent = '$' + avg;
+  document.getElementById('s-avgcost').textContent = '$' + Number(avg).toFixed(2);
 }
 
 function renderChart(d) {
