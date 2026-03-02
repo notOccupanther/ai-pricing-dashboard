@@ -1,0 +1,415 @@
+{
+  "generated_at": "2026-03-02T11:57:41.805238+00:00",
+  "source": "scraped",
+  "stats": {
+    "providers": 9,
+    "models": 29,
+    "cheapest_input": 0.035,
+    "cheapest_model": "Nova Micro",
+    "avg_input": 1.89,
+    "price_changes_30d": 8
+  },
+  "models": [
+    {
+      "model": "Nova Micro",
+      "provider": "Amazon",
+      "input": 0.035,
+      "output": 0.14,
+      "context": "128K",
+      "category": "Efficient",
+      "url": "https://aws.amazon.com/bedrock/pricing/"
+    },
+    {
+      "model": "Nova Lite",
+      "provider": "Amazon",
+      "input": 0.06,
+      "output": 0.24,
+      "context": "300K",
+      "category": "Efficient",
+      "url": "https://aws.amazon.com/bedrock/pricing/"
+    },
+    {
+      "model": "GPT-4.1 nano",
+      "provider": "OpenAI",
+      "input": 0.1,
+      "output": 0.4,
+      "context": "1M",
+      "category": "Efficient",
+      "url": "https://openai.com/api/pricing/"
+    },
+    {
+      "model": "Gemini 2.0 Flash",
+      "provider": "Google",
+      "input": 0.1,
+      "output": 0.4,
+      "context": "1M",
+      "category": "Efficient",
+      "url": "https://ai.google.dev/pricing"
+    },
+    {
+      "model": "Mistral Small",
+      "provider": "Mistral",
+      "input": 0.1,
+      "output": 0.3,
+      "context": "32K",
+      "category": "Efficient",
+      "url": "https://mistral.ai/technology/#pricing"
+    },
+    {
+      "model": "GPT-4o mini",
+      "provider": "OpenAI",
+      "input": 0.15,
+      "output": 0.6,
+      "context": "128K",
+      "category": "Efficient",
+      "url": "https://openai.com/api/pricing/"
+    },
+    {
+      "model": "Gemini 2.5 Flash",
+      "provider": "Google",
+      "input": 0.15,
+      "output": 0.6,
+      "context": "1M",
+      "category": "Efficient",
+      "url": "https://ai.google.dev/pricing"
+    },
+    {
+      "model": "Command R",
+      "provider": "Cohere",
+      "input": 0.15,
+      "output": 0.6,
+      "context": "128K",
+      "category": "Efficient",
+      "url": "https://cohere.com/pricing"
+    },
+    {
+      "model": "Codestral",
+      "provider": "Mistral",
+      "input": 0.2,
+      "output": 0.6,
+      "context": "32K",
+      "category": "Code",
+      "url": "https://mistral.ai/technology/#pricing"
+    },
+    {
+      "model": "DeepSeek V3",
+      "provider": "DeepSeek",
+      "input": 0.27,
+      "output": 1.1,
+      "context": "64K",
+      "category": "Efficient",
+      "url": "https://platform.deepseek.com/api-docs/pricing"
+    },
+    {
+      "model": "Grok 3 mini",
+      "provider": "xAI",
+      "input": 0.3,
+      "output": 0.5,
+      "context": "131K",
+      "category": "Efficient",
+      "url": "https://x.ai/api"
+    },
+    {
+      "model": "GPT-4.1 mini",
+      "provider": "OpenAI",
+      "input": 0.4,
+      "output": 1.6,
+      "context": "1M",
+      "category": "Efficient",
+      "url": "https://openai.com/api/pricing/"
+    },
+    {
+      "model": "DeepSeek R1",
+      "provider": "DeepSeek",
+      "input": 0.55,
+      "output": 2.19,
+      "context": "64K",
+      "category": "Reasoning",
+      "url": "https://platform.deepseek.com/api-docs/pricing"
+    },
+    {
+      "model": "Llama 3.3 70B",
+      "provider": "Meta",
+      "input": 0.59,
+      "output": 0.79,
+      "context": "128K",
+      "category": "Open Source",
+      "url": "https://together.ai/pricing"
+    },
+    {
+      "model": "Claude Haiku 3.5",
+      "provider": "Anthropic",
+      "input": 0.8,
+      "output": 4.0,
+      "context": "200K",
+      "category": "Efficient",
+      "url": "https://www.anthropic.com/pricing"
+    },
+    {
+      "model": "Nova Pro",
+      "provider": "Amazon",
+      "input": 0.8,
+      "output": 3.2,
+      "context": "300K",
+      "category": "Balanced",
+      "url": "https://aws.amazon.com/bedrock/pricing/"
+    },
+    {
+      "model": "o4-mini",
+      "provider": "OpenAI",
+      "input": 1.1,
+      "output": 4.4,
+      "context": "200K",
+      "category": "Reasoning",
+      "url": "https://openai.com/api/pricing/"
+    },
+    {
+      "model": "Gemini 2.5 Pro",
+      "provider": "Google",
+      "input": 1.25,
+      "output": 10.0,
+      "context": "1M",
+      "category": "Flagship",
+      "url": "https://ai.google.dev/pricing"
+    },
+    {
+      "model": "Gemini 1.5 Pro",
+      "provider": "Google",
+      "input": 1.25,
+      "output": 5.0,
+      "context": "2M",
+      "category": "Balanced",
+      "url": "https://ai.google.dev/pricing"
+    },
+    {
+      "model": "GPT-4.1",
+      "provider": "OpenAI",
+      "input": 2.0,
+      "output": 8.0,
+      "context": "1M",
+      "category": "Flagship",
+      "url": "https://openai.com/api/pricing/"
+    },
+    {
+      "model": "Mistral Large",
+      "provider": "Mistral",
+      "input": 2.0,
+      "output": 6.0,
+      "context": "128K",
+      "category": "Flagship",
+      "url": "https://mistral.ai/technology/#pricing"
+    },
+    {
+      "model": "GPT-4o",
+      "provider": "OpenAI",
+      "input": 2.5,
+      "output": 10.0,
+      "context": "128K",
+      "category": "Flagship",
+      "url": "https://openai.com/api/pricing/"
+    },
+    {
+      "model": "Command R+",
+      "provider": "Cohere",
+      "input": 2.5,
+      "output": 10.0,
+      "context": "128K",
+      "category": "Balanced",
+      "url": "https://cohere.com/pricing"
+    },
+    {
+      "model": "Claude Sonnet 4",
+      "provider": "Anthropic",
+      "input": 3.0,
+      "output": 15.0,
+      "context": "200K",
+      "category": "Balanced",
+      "url": "https://www.anthropic.com/pricing"
+    },
+    {
+      "model": "Claude Sonnet 3.7",
+      "provider": "Anthropic",
+      "input": 3.0,
+      "output": 15.0,
+      "context": "200K",
+      "category": "Balanced",
+      "url": "https://www.anthropic.com/pricing"
+    },
+    {
+      "model": "Grok 3",
+      "provider": "xAI",
+      "input": 3.0,
+      "output": 15.0,
+      "context": "131K",
+      "category": "Flagship",
+      "url": "https://x.ai/api"
+    },
+    {
+      "model": "Llama 3.1 405B",
+      "provider": "Meta",
+      "input": 3.5,
+      "output": 3.5,
+      "context": "128K",
+      "category": "Open Source",
+      "url": "https://together.ai/pricing"
+    },
+    {
+      "model": "o3",
+      "provider": "OpenAI",
+      "input": 10.0,
+      "output": 40.0,
+      "context": "200K",
+      "category": "Reasoning",
+      "url": "https://openai.com/api/pricing/"
+    },
+    {
+      "model": "Claude Opus 4",
+      "provider": "Anthropic",
+      "input": 15.0,
+      "output": 75.0,
+      "context": "200K",
+      "category": "Flagship",
+      "url": "https://www.anthropic.com/pricing"
+    }
+  ],
+  "recent_changes": [
+    {
+      "model": "GPT-4.1",
+      "provider": "OpenAI",
+      "change_pct": 0,
+      "direction": "new",
+      "date": "2026-04-14",
+      "note": "New flagship model launch"
+    },
+    {
+      "model": "GPT-4.1 nano",
+      "provider": "OpenAI",
+      "change_pct": 0,
+      "direction": "new",
+      "date": "2026-04-14",
+      "note": "Ultra-efficient new tier"
+    },
+    {
+      "model": "Gemini 2.5 Pro",
+      "provider": "Google",
+      "change_pct": 0,
+      "direction": "new",
+      "date": "2026-03-25",
+      "note": "New Gemini generation"
+    },
+    {
+      "model": "Gemini 2.5 Flash",
+      "provider": "Google",
+      "change_pct": -40,
+      "direction": "down",
+      "date": "2026-03-01",
+      "note": "Competitive repricing"
+    },
+    {
+      "model": "DeepSeek V3",
+      "provider": "DeepSeek",
+      "change_pct": -40,
+      "direction": "down",
+      "date": "2026-02-20",
+      "note": "Aggressive market pricing"
+    },
+    {
+      "model": "Mistral Small",
+      "provider": "Mistral",
+      "change_pct": -50,
+      "direction": "down",
+      "date": "2026-01-30",
+      "note": "Major price cut"
+    },
+    {
+      "model": "Grok 3 mini",
+      "provider": "xAI",
+      "change_pct": -25,
+      "direction": "down",
+      "date": "2026-02-05",
+      "note": "Efficiency tier added"
+    },
+    {
+      "model": "Claude Haiku 3.5",
+      "provider": "Anthropic",
+      "change_pct": 0,
+      "direction": "new",
+      "date": "2026-02-15",
+      "note": "Replaces Haiku 3"
+    }
+  ],
+  "providers": [
+    {
+      "name": "OpenAI",
+      "model_count": 7,
+      "cheapest_model": "GPT-4.1 nano",
+      "cheapest_input": 0.1,
+      "flagship_model": "o3",
+      "flagship_input": 10.0
+    },
+    {
+      "name": "Anthropic",
+      "model_count": 4,
+      "cheapest_model": "Claude Haiku 3.5",
+      "cheapest_input": 0.8,
+      "flagship_model": "Claude Opus 4",
+      "flagship_input": 15.0
+    },
+    {
+      "name": "Google",
+      "model_count": 4,
+      "cheapest_model": "Gemini 2.0 Flash",
+      "cheapest_input": 0.1,
+      "flagship_model": "Gemini 1.5 Pro",
+      "flagship_input": 1.25
+    },
+    {
+      "name": "Meta",
+      "model_count": 2,
+      "cheapest_model": "Llama 3.3 70B",
+      "cheapest_input": 0.59,
+      "flagship_model": "Llama 3.1 405B",
+      "flagship_input": 3.5
+    },
+    {
+      "name": "Mistral",
+      "model_count": 3,
+      "cheapest_model": "Mistral Small",
+      "cheapest_input": 0.1,
+      "flagship_model": "Mistral Large",
+      "flagship_input": 2.0
+    },
+    {
+      "name": "DeepSeek",
+      "model_count": 2,
+      "cheapest_model": "DeepSeek V3",
+      "cheapest_input": 0.27,
+      "flagship_model": "DeepSeek R1",
+      "flagship_input": 0.55
+    },
+    {
+      "name": "xAI",
+      "model_count": 2,
+      "cheapest_model": "Grok 3 mini",
+      "cheapest_input": 0.3,
+      "flagship_model": "Grok 3",
+      "flagship_input": 3.0
+    },
+    {
+      "name": "Cohere",
+      "model_count": 2,
+      "cheapest_model": "Command R",
+      "cheapest_input": 0.15,
+      "flagship_model": "Command R+",
+      "flagship_input": 2.5
+    },
+    {
+      "name": "Amazon",
+      "model_count": 3,
+      "cheapest_model": "Nova Micro",
+      "cheapest_input": 0.035,
+      "flagship_model": "Nova Pro",
+      "flagship_input": 0.8
+    }
+  ]
+}
