@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-03-02T12:45:48.563151+00:00",
+  "generated_at": "2026-03-08T03:00:07.597143+00:00",
   "source": "scraped",
   "stats": {
     "providers": 9,
@@ -7,7 +7,7 @@
     "cheapest_input": 0.035,
     "cheapest_model": "Nova Micro",
     "avg_input": 2.12,
-    "price_changes_30d": 5
+    "price_changes_30d": 8
   },
   "models": [
     {
@@ -287,40 +287,64 @@
       "provider": "OpenAI",
       "change_pct": 0,
       "direction": "new",
-      "date": "2026-03-02",
-      "note": "New model added"
+      "date": "2026-02-01",
+      "note": "New flagship \u2014 replaces GPT-5"
     },
     {
       "model": "GPT-5.2 Pro",
       "provider": "OpenAI",
       "change_pct": 0,
       "direction": "new",
-      "date": "2026-03-02",
-      "note": "New model added"
+      "date": "2026-02-01",
+      "note": "Ultra-premium tier for enterprise"
     },
     {
       "model": "GPT-5 mini",
       "provider": "OpenAI",
       "change_pct": 0,
       "direction": "new",
-      "date": "2026-03-02",
-      "note": "New model added"
+      "date": "2026-01-15",
+      "note": "Efficient GPT-5 tier"
     },
     {
       "model": "Claude Opus 4.6",
       "provider": "Anthropic",
-      "change_pct": 0,
-      "direction": "new",
-      "date": "2026-03-02",
-      "note": "New model added"
+      "change_pct": -67,
+      "direction": "down",
+      "date": "2026-02-20",
+      "note": "Significant price drop from Opus 4 ($15\u2192$5 input)"
     },
     {
       "model": "Claude Sonnet 4.6",
       "provider": "Anthropic",
       "change_pct": 0,
       "direction": "new",
-      "date": "2026-03-02",
-      "note": "New model added"
+      "date": "2026-02-20",
+      "note": "New default model on claude.ai"
+    },
+    {
+      "model": "Gemini 2.5 Pro",
+      "provider": "Google",
+      "change_pct": 0,
+      "direction": "new",
+      "date": "2026-01-20",
+      "note": "New Gemini generation"
+    },
+    {
+      "model": "Gemini 2.5 Flash",
+      "provider": "Google",
+      "change_pct": -40,
+      "direction": "down",
+      "date": "2026-01-20",
+      "note": "Competitive repricing"
+    },
+    {
+      "model": "DeepSeek V3",
+      "provider": "DeepSeek",
+      "change_pct": -40,
+      "direction": "down",
+      "date": "2026-01-10",
+      "note": "Aggressive market pricing"
     }
   ],
   "providers": [
